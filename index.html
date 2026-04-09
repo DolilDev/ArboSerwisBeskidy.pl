@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArboSerwisBeskidy – Wycinka Drzew & Ogrody</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<body>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" onclick="closeMobileMenu()"><i class="fas fa-times"></i></button>
+    <a href="#uslugi" onclick="closeMobileMenu()">Usługi</a>
+    <a href="#wycinka" onclick="closeMobileMenu()">Wycinka</a>
+    <a href="#galeria" onclick="closeMobileMenu()">Galeria</a>
+    <a href="#opinie" onclick="closeMobileMenu()">Opinie</a>
+    <a href="#kontakt" onclick="closeMobileMenu()">Kontakt</a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="logo">Arbo<span>Serwis</span>Beskidy</div>
+    <ul class="nav-links">
+      <li><a href="#uslugi">Usługi</a></li>
+      <li><a href="#wycinka">Wycinka</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#opinie">Opinie</a></li>
+      <li><a href="#kontakt" class="nav-cta">Kontakt</a></li>
+    </ul>
+    <div class="hamburger" onclick="openMobileMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+      <video 
+        autoplay 
+        muted 
+        loop 
+        playsinline 
+        poster="img/bgimage.webp" 
+        class="hero-video">
+        <source src="img/bgVideo.mp4" type="video/mp4">
+        Twoja przeglądarka nie obsługuje formatu wideo.
+      </video>
+      <div class="hero-gradient"></div>
+      <div class="hero-content">
+      <div class="hero-badge"><i class="fas fa-exclamation-triangle"></i> Interwencja 24/7</div>
+      <h1>Twoje drzewo zagraża<br><em>bezpieczeństwu?</em><br>Działamy szybko.</h1>
+      <p>Profesjonalna wycinka niebezpiecznych drzew, pielęgnacja żywopłotów oraz kompleksowa aranżacja ogrodów.
+        Obsługujemy województwo śląskie i okolice.</p>
+      <div class="hero-btns">
+        <a href="tel:+48511458807" class="btn-primary"><i class="fas fa-phone"></i> Zadzwoń teraz</a>
+        <a href="#kontakt" class="btn-secondary"><i class="fas fa-clipboard-list"></i> Bezpłatna wycena</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">500+</div>
+        <div class="stat-label">Realizacji</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">12</div>
+        <div class="stat-label">Lat doświadczenia</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">24/7</div>
+        <div class="stat-label">Dyżur awaryjny</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES OVERVIEW -->
+  <div class="services-overview" id="uslugi">
+    <div class="section-label">Co robimy</div>
+    <div class="section-title">Kompleksowa opieka<br>nad <em>Twoją zielenią</em></div>
+    <div class="services-grid">
+      <a href="#wycinka" class="service-card">
+        <div class="service-card-inner">
+          <i class="fas fa-tree service-icon"></i>
+          <h3>Wycinka drzew</h3>
+          <p>Profesjonalne usuwanie drzew zagrażających życiu, mieniu i infrastrukturze.</p>
+          <div class="arrow">Dowiedz się więcej →</div>
+        </div>
+      </a>
+      <a href="#zywoploty" class="service-card">
+        <div class="service-card-inner">
+          <i class="fas fa-cut service-icon"></i>
+          <h3>Przycinanie żywopłotów</h3>
+          <p>Precyzyjne formowanie i pielęgnacja żywopłotów każdego gatunku i wysokości.</p>
+          <div class="arrow">Dowiedz się więcej →</div>
+        </div>
+      </a>
+      <a href="#pielegnacja" class="service-card">
+        <div class="service-card-inner">
+          <i class="fas fa-leaf service-icon"></i>
+          <h3>Pielęgnacja ogrodów</h3>
+          <p>Kompleksowa opieka przez cały sezon — trawnik, rabaty, drzewa ozdobne.</p>
+          <div class="arrow">Dowiedz się więcej →</div>
+        </div>
+      </a>
+      <a href="#aranzacja" class="service-card">
+        <div class="service-card-inner">
+          <i class="fas fa-seedling service-icon"></i>
+          <h3>Aranżacja ogrodów</h3>
+          <p>Od projektu do realizacji — tworzymy ogrody dopasowane do Twojego stylu życia.</p>
+          <div class="arrow">Dowiedz się więcej →</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- WARNING SECTION -->
+  <section class="warning-section reveal" id="ostrzezenia">
+    <div class="section-label">Sygnały alarmowe</div>
+    <div class="section-title">Nie czekaj, aż będzie<br><em>za późno</em></div>
+    <div class="warning-grid">
+      <div class="warning-card reveal reveal-delay-1">
+        <div class="warning-icon">🌩️</div>
+        <h4>Drzewo pochylone po burzy</h4>
+        <p>Nagłe przechylenie po silnym wietrze oznacza uszkodzenie systemu korzeniowego — ryzyko upadku rośnie z każdym
+          dniem.</p>
+      </div>
+      <div class="warning-card reveal reveal-delay-2">
+        <div class="warning-icon">⚡</div>
+        <h4>Gałęzie przy liniach elektrycznych</h4>
+        <p>Konary zahaczające o przewody energetyczne to zagrożenie pożarowe i ryzyko przerw w dostawie prądu.</p>
+      </div>
+      <div class="warning-card reveal reveal-delay-3">
+        <div class="warning-icon">🏠</div>
+        <h4>Konary nad dachem lub autem</h4>
+        <p>Nawet pozornie zdrowe gałęzie mogą spaść pod ciężarem śniegu lub podczas burzy i zniszczyć budynek.</p>
+      </div>
+      <div class="warning-card reveal reveal-delay-1">
+        <div class="warning-icon">🦠</div>
+        <h4>Drzewo chore lub uschnięte</h4>
+        <p>Drewno zaatakowane przez grzyby lub owady jest znacznie słabsze — takie drzewo może runąć bez ostrzeżenia.
+        </p>
+      </div>
+      <div class="warning-card reveal reveal-delay-2">
+        <div class="warning-icon">🌊</div>
+        <h4>Podmyte lub odsłonięte korzenie</h4>
+        <p>Po powodziach i ulewach grunt traci stabilność, a korzenie przestają utrzymywać drzewo w pionie.</p>
+      </div>
+      <div class="warning-card reveal reveal-delay-3">
+        <div class="warning-icon">🚧</div>
+        <h4>Drzewo blokujące drogę</h4>
+        <p>Obalenie drzewa lub nawet głównego konaru na drogę może uniemożliwić przejazd i stworzyć niebezpieczną
+          sytuację.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="timeline-section" id="wycinka">
+    <div class="section-label">Etapy realizacji</div>
+    <div class="section-title">Jak wygląda profesjonalna<br><em>wycinka drzew?</em></div>
+    <div class="timeline" style="max-width:700px; margin-top:3.5rem;">
+      <div class="timeline-step reveal">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Bezpłatna ocena ryzyka</h4>
+          <p>Przyjeżdżamy na miejsce, oceniamy stopień zagrożenia, stan drzewa i otoczenie. Na tej podstawie
+            przygotowujemy wycenę i plan działania.</p>
+        </div>
+      </div>
+      <div class="timeline-step reveal reveal-delay-1">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Przygotowanie i zabezpieczenie terenu</h4>
+          <p>Wyznaczamy strefę bezpieczeństwa, zabezpieczamy otoczenie i przygotowujemy sprzęt — piły spalinowe, liny,
+            rębarki, podnośniki.</p>
+        </div>
+      </div>
+      <div class="timeline-step reveal reveal-delay-2">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Precyzyjna wycinka etapami</h4>
+          <p>Wycinamy sekcja po sekcji — lub stosujemy kontrolowane obalenie. Każdy ruch jest zaplanowany, aby
+            uniknąć szkód w otoczeniu.</p>
+        </div>
+      </div>
+      <div class="timeline-step reveal reveal-delay-3">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h4>Rozdrobnienie i utylizacja</h4>
+          <p>Gałęzie trafiają do rębarki — zrębki możemy pozostawić na miejscu jako mulcz. Drewno wywożymy lub
+            zostawiamy na Twoje życzenie.</p>
+        </div>
+      </div>
+      <div class="timeline-step reveal reveal-delay-4">
+        <div class="step-num">5</div>
+        <div class="step-content">
+          <h4>Posprzątanie i odbiór prac</h4>
+          <p>Teren opuszczamy w idealnym porządku. Możliwe jest również frezowanie pnia w ramach tej samej usługi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ŻYWOPŁOTY -->
+  <div class="service-detail" id="zywoploty">
+    <div class="service-detail-inner">
+      <div class="service-detail-img reveal">
+        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800" alt="Przycinanie żywopłotu">
+      </div>
+      <div class="service-detail-content reveal reveal-delay-2">
+        <div class="section-label">Żywopłoty</div>
+        <h2>Precyzyjne przycinanie<br>i formowanie</h2>
+        <p>Zadbany żywopłot to nie tylko estetyka — to również zdrowie roślin i właściwe zagęszczenie. Pracujemy z
+          żywopłotami każdego gatunku i wysokości.</p>
+        <ul class="feature-list">
+          <li>Regularne formowanie i nadawanie kształtu</li>
+          <li>Przycinanie sezonowe — wiosna i jesień</li>
+          <li>Usuwanie chorych, suchych i martwych pędów</li>
+          <li>Cięcie prześwietlające poprawiające zagęszczenie</li>
+          <li>Obsługa żywopłotów do dowolnej wysokości (praca na zwyżce)</li>
+          <li>Wywóz i utylizacja odpadów po cięciu</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- PIELĘGNACJA -->
+  <div class="service-detail" id="pielegnacja">
+    <div class="service-detail-inner reverse">
+      <div class="service-detail-img reveal">
+        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800" alt="Pielęgnacja ogrodu">
+      </div>
+      <div class="service-detail-content reveal reveal-delay-2">
+        <div class="section-label">Pielęgnacja</div>
+        <h2>Twój ogród w najlepszej<br>formie cały rok</h2>
+        <p>Kompleksowa opieka ogrodowa dostosowana do rytmu pór roku. Oferujemy również abonamenty sezonowe — regularne
+          wizyty bez konieczności kontaktowania się za każdym razem.</p>
+        <ul class="feature-list">
+          <li>Koszenie, wertykulacja i nawożenie trawnika</li>
+          <li>Pielęgnacja rabat i roślin ozdobnych</li>
+          <li>Formowanie i pielęgnacja drzew oraz krzewów ozdobnych</li>
+          <li>Grabienie, kompostowanie, porządkowanie po sezonie</li>
+          <li>Ochrona roślin i zabiegi fitosanitarne</li>
+          <li>Abonamenty sezonowe — stała opieka przez cały rok</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ARANŻACJA -->
+  <div class="service-detail" id="aranzacja">
+    <div class="service-detail-inner">
+      <div class="service-detail-img reveal">
+        <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=800" alt="Aranżacja ogrodu">
+      </div>
+      <div class="service-detail-content reveal reveal-delay-2">
+        <div class="section-label">Aranżacja</div>
+        <h2>Projektujemy ogrody,<br>które zachwycają</h2>
+        <p>Od pierwszej rozmowy do gotowego ogrodu — przeprowadzimy Cię przez cały proces. Tworzymy przestrzenie
+          dopasowane do Twojego stylu, gleby i nasłonecznienia.</p>
+        <div class="aranżacja-steps">
+          <div class="aranż-step">
+            <div class="aranż-num">1</div>
+            <div>
+              <h5>Konsultacja i projekt</h5>
+              <p>Omawiamy Twoją wizję i potrzeby, tworzymy plan nasadzeń i koncepcję aranżacyjną.</p>
+            </div>
+          </div>
+          <div class="aranż-step">
+            <div class="aranż-num">2</div>
+            <div>
+              <h5>Dobór roślin i materiałów</h5>
+              <p>Wybieramy gatunki odpowiednie do gleby, klimatu i ekspozycji na słońce.</p>
+            </div>
+          </div>
+          <div class="aranż-step">
+            <div class="aranż-num">3</div>
+            <div>
+              <h5>Realizacja i nasadzenia</h5>
+              <p>Profesjonalne sadzenie, mulczowanie i pielęgnacja postarterska — ogród gotowy do życia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <section class="gallery-section" id="galeria">
+    <div class="section-label">Realizacje</div>
+    <div class="section-title" style="color:white">Nasza praca mówi<br><em style="color:var(--orange)">sama za
+        siebie</em></div>
+    <div class="gallery-wrapper">
+  <div class="gallery-track">
+    <div class="gallery-item">
+      <img src="img/pielegnacja-wysokosciowa-drzew.jpg.webp"
+        alt="Pielęgnacja wysokociśnieniowa drzewa z użyciem podnośnika koszowego">
+      <div class="gallery-overlay"><span></span></div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="img/wycinka-drzew-metoda-alpinistyczna.webp"
+        alt="Arborysta wykonujący cięcia pielęgnacyjne w koronie drzewa iglastego">
+      <div class="gallery-overlay"><span></span></div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="img/sekcyjna-wycinka-drzew-metoda-alpinistyczna.webp"
+        alt="Sekcyjna wycinka drzewa metodą alpinistyczną z użyciem pilarki spalinowej">
+      <div class="gallery-overlay"><span></span></div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="img/wycinka-drzew-panele-fotowoltaiczne.webp"
+        alt="Bezpieczna wycinka wysokich drzew bezpośrednio nad panelami fotowoltaicznymi">
+      <div class="gallery-overlay"><span></span></div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="img/wycinka-wysokosciowa-drzew.webp" 
+        alt="Specjalistyczna wycinka wysokociśnieniowa sosny przez profesjonalnego arborystę">
+      <div class="gallery-overlay"><span></span></div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="img/podkrzesywanie-drzew-wysokich.webp" 
+        alt="Alpinistyczne podkrzesywanie i usuwanie gałęzi z wysokiego drzewa">
+      <div class="gallery-overlay"><span></span></div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="img/wycinka-drzew-metoda-alpinistyczna.webp"
+        alt="Arborysta wykonujący cięcia pielęgnacyjne w koronie drzewa iglastego">
+      <div class="gallery-overlay"><span></span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="img/sekcyjna-wycinka-drzew-metoda-alpinistyczna.webp"
+        alt="Sekcyjna wycinka drzewa metodą alpinistyczną z użyciem pilarki spalinowej">
+      <div class="gallery-overlay"><span></span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="img/wycinka-drzew-panele-fotowoltaiczne.webp"
+        alt="Bezpieczna wycinka wysokich drzew bezpośrednio nad panelami fotowoltaicznymi">
+      <div class="gallery-overlay"><span></span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="img/wycinka-wysokosciowa-drzew.webp" 
+        alt="Specjalistyczna wycinka wysokociśnieniowa sosny przez profesjonalnego arborystę">
+      <div class="gallery-overlay"><span></span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="img/podkrzesywanie-drzew-wysokich.webp" 
+        alt="Alpinistyczne podkrzesywanie i usuwanie gałęzi z wysokiego drzewa">
+      <div class="gallery-overlay"><span></span></div>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why-section reveal" id="dlaczego-my">
+    <div class="section-label">Nasze wartości</div>
+    <div class="section-title">Profesjonalizm,<br>który <em>widać</em></div>
+    <div class="why-grid">
+      <div class="why-card reveal reveal-delay-1">
+        <div class="why-icon"><i class="fas fa-clock"></i></div>
+        <h4>Interwencja 24/7</h4>
+        <p>W nagłych przypadkach jesteśmy dostępni przez całą dobę. Dyżur awaryjny działa 365 dni w roku.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+        <h4>Ubezpieczenie OC</h4>
+        <p>Posiadamy pełne ubezpieczenie odpowiedzialności cywilnej. Pracujemy bezpiecznie i z pełną odpowiedzialnością.
+        </p>
+      </div>
+      <div class="why-card reveal reveal-delay-3">
+        <div class="why-icon"><i class="fas fa-certificate"></i></div>
+        <h4>Certyfikowani arborysci</h4>
+        <p>Nasz zespół to wykwalifikowani specjaliści z wieloletnim doświadczeniem i uprawnieniami do pracy na
+          wysokości.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-4">
+        <div class="why-icon"><i class="fas fa-recycle"></i></div>
+        <h4>Ekologiczna utylizacja</h4>
+        <p>Zrębki trafiają do kompostowania lub jako mulcz. Drewno oddajemy do ponownego użycia. Zero odpadów na
+          wysypiskach.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="opinie">
+    <div class="section-label">Co mówią klienci</div>
+    <div class="section-title">Opinie, które nas<br><em>motywują</em></div>
+    <div class="testimonials-grid-wrapper">
+      <div class="testimonials-grid" id="testimonialsGrid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <span class="quote-mark">"</span>
+          <p>Ekipa przyjechała w ciągu 2 godzin od zgłoszenia. Drzewo groziło zawaleniem na garaż po wczorajszej burzy.
+            Sprawna, profesjonalna robota i posprzątany teren. Gorąco polecam!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MK</div>
+            <div class="author-info"><strong>Marek Kowalski</strong><span>Bielsko-biała — Wycinka awaryjna</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <span class="quote-mark">"</span>
+          <p>Szybko, sprawnie i bez bałaganu. Polecam!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AN</div>
+            <div class="author-info"><strong>Anna Nowak</strong><span>Szczyrk — Wycinka drzewa</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <span class="quote-mark">"</span>
+          <p>Co roku korzystam z usługi abonamentowej pielęgnacji. Zawsze punktualnie, zawsze solidnie. Żywopłot przy
+            ogrodzeniu wygląda jak z okładki magazynu. Warta każdej złotówki usługa.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">TW</div>
+            <div class="author-info"><strong>Tomasz Wiśniewski</strong><span>Bielsko-biała — Pielęgnacja ogrodu</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <span class="quote-mark">"</span>
+          <p>Polecam z całego serca! Usunęli dwa ogromne topole przy granicy działki. Praca wykonana bardzo precyzyjnie,
+            bez żadnych uszkodzeń ogrodzenia. Cena uczciwa, ekipa kulturalna.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">PB</div>
+            <div class="author-info"><strong>Piotr Baranowski</strong><span>Bielsko-Biała — Wycinka drzew</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <span class="quote-mark">"</span>
+          <p>Zadzwoniłam w sobotę rano, bo gałąź zwisała nad samochodem. Przyjechali jeszcze tego samego dnia.
+            Niesamowita reakcja i profesjonalizm. Naprawdę można na nich polegać.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">KM</div>
+            <div class="author-info"><strong>Katarzyna Malinowska</strong><span>Szczyrk — Interwencja awaryjna</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <span class="quote-mark">"</span>
+          <p>Skorzystałem z usługi frezowania pnia po wycince. Szybko, dokładnie i bez bałaganu. Ekipa zadbała o każdy
+            detal. Na pewno wrócę przy kolejnej potrzebie i polecę znajomym.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RS</div>
+            <div class="author-info"><strong>Robert Szymański</strong><span>Czechowice-Dziedzice — Frezowanie pnia</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials-nav">
+        <button class="testimonials-btn" id="testimonialsPrev" aria-label="Poprzednia opinia">
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <div class="testimonials-dots" id="testimonialsDots"></div>
+        <button class="testimonials-btn" id="testimonialsNext" aria-label="Następna opinia">
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="kontakt">
+    <div class="section-label">Skontaktuj się</div>
+    <div class="section-title">Porozmawiajmy<br>o <em style="color:var(--orange)">Twoim zleceniu</em></div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Jesteśmy tu dla Ciebie</h3>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <a href="tel:+48511458807">+48 511 458 807</a>
+            <p>Czynne 7 dni w tygodniu, awarie 24/7</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <a href="mailto:kontakt@arboserwisbeskidy.pl">kontakt@arboserwisbeskidy.pl</a>
+            <p>Odpowiadamy w ciągu 24 godzin</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <span style="color: var(--white); font-weight: 600; font-size: 1.05rem; display: block;">Bielsko-Biała +50km</span>
+            <p>dojazd w cenie usługi</p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=61574379541969" target="_blank" class="social-link" aria-label="Facebook"><i
+              class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/arboserwis.beskidy/" target="_blank" class="social-link" aria-label="Instagram"><i
+              class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div>
+        <form class="contact-form" id="arboForm">
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+    <div class="form-row">
+        <div class="form-group">
+            <label>Imię i nazwisko</label>
+            <input type="text" name="name" placeholder="Jan Kowalski" pattern="^[A-Za-ząćęłńóśźż]{3,}\s[A-Za-ząćęłńóśźż]{3,}$" title="Wymagane 2 słowa, każde po minimum 3 litery" required>
+            <span class="error-message" style="color: #ff6b6b; font-size: 0.8rem; margin-top: 0.3rem; display: none;"></span>
+        </div>
+        <div class="form-group">
+            <!-- Dodajemy email tutaj -->
+            <label>Adres E-mail</label>
+            <input type="email" name="email" placeholder="przyklad@poczta.pl" pattern="^[^@]+@[^@]+\.[^@]+$" title="Wymagany format: nazwa@domena.rozszerzenie" required>
+            <span class="error-message" style="color: #ff6b6b; font-size: 0.8rem; margin-top: 0.3rem; display: none;"></span>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label>Telefon</label>
+            <input type="tel" name="phone" placeholder="123 456 789" pattern="[0-9]+" title="Tylko cyfry" required>
+            <span class="error-message" style="color: #ff6b6b; font-size: 0.8rem; margin-top: 0.3rem; display: none;"></span>
+        </div>
+        <div class="form-group">
+            <label>Adres (opcjonalnie)</label>
+            <input type="text" name="address" placeholder="ul. Przykładowa 1, 43-300 Bielsko-Biała">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Rodzaj usługi</label>
+        <select name="service">
+            <option value="">Wybierz usługę...</option>
+            <option>Wycinka drzewa</option>
+            <option>Przycinanie żywopłotów</option>
+            <option>Pielęgnacja ogrodu</option>
+            <option>Aranżacja ogrodu</option>
+            <option>Interwencja awaryjna</option>
+            <option>Inne</option>
+        </select>
+        <span class="error-message" style="color: #ff6b6b; font-size: 0.8rem; margin-top: 0.3rem; display: none;"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Opis sytuacji</label>
+        <textarea name="message" placeholder="Opisz krótko problem..." minlength="15" title="Minimum 15 znaków" required></textarea>
+        <span class="error-message" style="color: #ff6b6b; font-size: 0.8rem; margin-top: 0.3rem; display: none;"></span>
+    </div>
+
+    <button type="submit" class="btn-primary" style="width:100%; justify-content:center; cursor:pointer;">
+        <i class="fas fa-paper-plane"></i> Wyślij wiadomość
+    </button>
+</form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Arbo<span>Serwis</span>Beskidy</div>
+    <ul class="footer-links">
+      <li><a href="dokumenty.html#polityka">Polityka prywatności</a></li>
+      <li><a href="dokumenty.html#rodo">RODO</a></li>
+      <li><a href="dokumenty.html#regulamin">Regulamin</a></li>
+    </ul>
+    <div class="foo    ter-copy">© 2026 ArboSerwisBeskidy. Wszelkie prawa zastrzeżone.</div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <a href="#home" id="backToTop" aria-label="Wróć na górę"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="script.js"></script>
+</body>
+</html>
