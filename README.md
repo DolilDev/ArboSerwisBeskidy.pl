@@ -40,3 +40,6 @@ Projekt został zbudowany z myślą o najwyższych standardach technicznego SEO:
 3. **Zgodność z RODO:** Wdrożenie dedykowanej podstrony z dokumentacją prawną i polityką prywatności, niezbędną w profesjonalnych usługach lokalnych.
 
 ---
+
+**Autor:** [DolilDev](https://github.com/DolilDev)
+**Autor:** [screampy525](https://github.com/screampy525)
