@@ -16,6 +16,7 @@ ArboSerwisBeskidy/
 ├── style.css           # Zaawansowane arkusze stylów (Custom Properties, UI/UX)
 ├── script.js           # Logika interakcji: menu mobilne, galeria, slidery
 ├── dokumenty.html      # Sekcja prawna: Polityka Prywatności i RODO
+├── img/                # Zoptymalizowane zasoby wizualne
 └── README.md           # Dokumentacja techniczna projektu
 
 ```
