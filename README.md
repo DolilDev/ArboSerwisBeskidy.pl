@@ -41,5 +41,10 @@ Projekt został zbudowany z myślą o najwyższych standardach technicznego SEO:
 
 ---
 
+**Projekt:** [ArboSerwisBeskidy.pl](https://ArboSerwisBeskidy.pl)
+
+**Technologie:** HTML | CSS | JS | SEO
+
 **Autor:** [DolilDev](https://github.com/DolilDev)
+
 **Autor:** [screampy525](https://github.com/screampy525)
