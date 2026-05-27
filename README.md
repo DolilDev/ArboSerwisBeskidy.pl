@@ -1,50 +1,50 @@
 # ArboSerwisBeskidy – Responsive Business Landing Page
 
-Nowoczesna, responsywna strona internetowa typu Landing Page zaprojektowana dla lokalnej firmy świadczącej usługi arborystyczne i ogrodnicze. Projekt koncentruje się na wysokiej konwersji, doskonałej wydajności (Performance) oraz pełnej optymalizacji technicznej pod kątem wyszukiwarek (SEO).
+A modern, responsive landing page designed for a local arborist and landscaping services company. The project focuses on high conversion rates, excellent performance, and full technical SEO optimization.
 
-## 🚀 Kluczowe Funkcje
-* **Mobile-First Design:** Strona w pełni responsywna, zoptymalizowana pod urządzenia mobilne, tablety i desktopy przy użyciu technik Flexbox i CSS Grid.
-* **Interaktywna Galeria Realizacji:** Autorski mechanizm "drag-to-scroll" w sekcji portfolio, zapewniający płynne i intuicyjne przeglądanie zdjęć na urządzeniach dotykowych.
-* **Dynamiczny System Opinii:** Implementacja slidera z automatyczną paginacją, zwiększająca dowód społeczny (Social Proof) i zaufanie klienta.
-* **Optymalizacja Konwersji (CRO):** Strategicznie rozmieszczone sekcje Call-to-Action (CTA) oraz czytelny formularz kontaktowy z walidacją po stronie klienta.
-* **Scroll Reveal Animations:** Zastosowanie Intersection Observer API do płynnego pojawiania się elementów podczas przewijania strony, co poprawia User Experience.
+## 🚀 Key Features
+* **Mobile-First Design:** Fully responsive layout optimized for mobile, tablet, and desktop devices using Flexbox and CSS Grid techniques.
+* **Interactive Portfolio Gallery:** Custom "drag-to-scroll" mechanism in the portfolio section, providing smooth and intuitive image browsing on touch devices.
+* **Dynamic Testimonials System:** Slider implementation with automatic pagination, enhancing social proof and customer trust.
+* **Conversion Rate Optimization (CRO):** Strategically placed Call-to-Action (CTA) sections and a clear contact form with client-side validation.
+* **Scroll Reveal Animations:** Use of the Intersection Observer API for smooth element appearance on scroll, improving User Experience.
 
-## 📂 Struktura Projektu
+## 📂 Project Structure
 ```text
 ArboSerwisBeskidy/
-├── index.html          # Główna struktura Landing Page (SEO Friendly)
-├── style.css           # Zaawansowane arkusze stylów (Custom Properties, UI/UX)
-├── script.js           # Logika interakcji: menu mobilne, galeria, slidery
-├── dokumenty.html      # Sekcja prawna: Polityka Prywatności i RODO
-├── img/                # Zoptymalizowane zasoby wizualne
-└── README.md           # Dokumentacja techniczna projektu
+├── index.html          # Main Landing Page structure (SEO Friendly)
+├── style.css           # Advanced stylesheets (Custom Properties, UI/UX)
+├── script.js           # Interaction logic: mobile menu, gallery, sliders
+├── dokumenty.html      # Legal section: Privacy Policy and GDPR
+├── img/                # Optimized visual assets
+└── README.md           # Project technical documentation
 
 ```
 
-## 🛠️ Stos technologiczny
+## 🛠️ Tech Stack
 
-* **Frontend:** HTML5 (Semantyczny), CSS3 (Modern Layouts), Vanilla JavaScript (ES6+).
-* **SEO Techniczne:** * Prawidłowa hierarchia nagłówków (H1-H4).
-* Optymalizacja atrybutów ALT dla grafik.
-* Implementacja struktury Open Graph dla mediów społecznościowych.
+* **Frontend:** HTML5 (Semantic), CSS3 (Modern Layouts), Vanilla JavaScript (ES6+).
+* **Technical SEO:**
+  * Proper heading hierarchy (H1–H4).
+  * ALT attribute optimization for images.
+  * Open Graph structure implementation for social media.
 
+* **Performance:** Use of a Noise Texture Overlay (SVG) for a unique visual effect with minimal CPU overhead.
 
-* **Performance:** Wykorzystanie "Noise Texture Overlay" (SVG) dla unikalnego efektu wizualnego przy minimalnym obciążeniu procesora.
+## 💡 Technical & SEO Solutions
 
-## 💡 Rozwiązania Techniczne i SEO
+The project was built with the highest technical SEO standards in mind:
 
-Projekt został zbudowany z myślą o najwyższych standardach technicznego SEO:
-
-1. **Dostępność i Semantyka:** Wykorzystanie tagów HTML5 w celu ułatwienia indeksacji treści przez roboty Google.
-2. **Optymalizacja zasobów:** Minimalizacja kodu CSS/JS oraz dbałość o Core Web Vitals (LCP, CLS).
-3. **Zgodność z RODO:** Wdrożenie dedykowanej podstrony z dokumentacją prawną i polityką prywatności, niezbędną w profesjonalnych usługach lokalnych.
+1. **Accessibility & Semantics:** Use of HTML5 tags to facilitate content indexing by Google bots.
+2. **Asset Optimization:** Minification of CSS/JS code and attention to Core Web Vitals (LCP, CLS).
+3. **GDPR Compliance:** Implementation of a dedicated subpage with legal documentation and privacy policy, essential for professional local services.
 
 ---
 
-**Projekt:** [ArboSerwisBeskidy.pl](https://ArboSerwisBeskidy.pl)
+**Project:** [ArboSerwisBeskidy.pl](https://ArboSerwisBeskidy.pl)
 
-**Technologie:** HTML | CSS | JS | SEO
+**Technologies:** HTML | CSS | JS | SEO
 
-**Autor:** [DolilDev](https://github.com/DolilDev)
+**Author:** [DolilDev](https://github.com/DolilDev)
 
-**Autor:** [screampy525](https://github.com/screampy525)
+**Author:** [screampy525](https://github.com/screampy525)
