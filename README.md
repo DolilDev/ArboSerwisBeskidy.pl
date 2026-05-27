@@ -1,50 +1,61 @@
-# ArboSerwisBeskidy – Responsive Business Landing Page
+# ArboSerwisBeskidy.pl
 
-A modern, responsive landing page designed for a local arborist and landscaping services company. The project focuses on high conversion rates, excellent performance, and full technical SEO optimization.
+> A high-performance, SEO-optimized landing page built for a local arborist company in the Beskidy region of Poland. Designed to maximize lead generation through conversion-focused layout, fast load times, and strong local SEO signals.
 
-## 🚀 Key Features
-* **Mobile-First Design:** Fully responsive layout optimized for mobile, tablet, and desktop devices using Flexbox and CSS Grid techniques.
-* **Interactive Portfolio Gallery:** Custom "drag-to-scroll" mechanism in the portfolio section, providing smooth and intuitive image browsing on touch devices.
-* **Dynamic Testimonials System:** Slider implementation with automatic pagination, enhancing social proof and customer trust.
-* **Conversion Rate Optimization (CRO):** Strategically placed Call-to-Action (CTA) sections and a clear contact form with client-side validation.
-* **Scroll Reveal Animations:** Use of the Intersection Observer API for smooth element appearance on scroll, improving User Experience.
+**[Live Demo →](https://ArboSerwisBeskidy.pl)**
 
-## 📂 Project Structure
-```text
-ArboSerwisBeskidy/
-├── index.html          # Main Landing Page structure (SEO Friendly)
-├── style.css           # Advanced stylesheets (Custom Properties, UI/UX)
-├── script.js           # Interaction logic: mobile menu, gallery, sliders
-├── dokumenty.html      # Legal section: Privacy Policy and GDPR
-├── img/                # Optimized visual assets
-└── README.md           # Project technical documentation
-
-```
-
-## 🛠️ Tech Stack
-
-* **Frontend:** HTML5 (Semantic), CSS3 (Modern Layouts), Vanilla JavaScript (ES6+).
-* **Technical SEO:**
-  * Proper heading hierarchy (H1–H4).
-  * ALT attribute optimization for images.
-  * Open Graph structure implementation for social media.
-
-* **Performance:** Use of a Noise Texture Overlay (SVG) for a unique visual effect with minimal CPU overhead.
-
-## 💡 Technical & SEO Solutions
-
-The project was built with the highest technical SEO standards in mind:
-
-1. **Accessibility & Semantics:** Use of HTML5 tags to facilitate content indexing by Google bots.
-2. **Asset Optimization:** Minification of CSS/JS code and attention to Core Web Vitals (LCP, CLS).
-3. **GDPR Compliance:** Implementation of a dedicated subpage with legal documentation and privacy policy, essential for professional local services.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/Deployed-GitHub%20Pages-222?style=flat&logo=github)
 
 ---
 
-**Project:** [ArboSerwisBeskidy.pl](https://ArboSerwisBeskidy.pl)
+## Overview
 
-**Technologies:** HTML | CSS | JS | SEO
+This project is a production landing page for a real client — an arborist business offering tree surgery and landscaping services. The goal was to build a fast, accessible, conversion-ready site with zero dependencies and no frameworks, keeping full control over performance and SEO.
 
-**Author:** [DolilDev](https://github.com/DolilDev)
+The site is deployed automatically via GitHub Actions on every push to `main`.
 
-**Author:** [screampy525](https://github.com/screampy525)
+## Technical Highlights
+
+- **Zero dependencies** — no frameworks, no build tools, no npm. Pure HTML/CSS/JS, which results in near-instant load times and no supply chain risk.
+- **Intersection Observer API** for scroll-triggered reveal animations, replacing heavier scroll event listeners and keeping the main thread free.
+- **Custom drag-to-scroll gallery** built from scratch using Pointer Events API — works on both touch and desktop without a library.
+- **WebP image format** used throughout for 30–50% smaller file sizes vs. JPEG, with proper fallbacks.
+- **Video background** served as a native `<video>` element with `muted`, `autoplay`, and `playsinline` attributes for cross-browser compatibility and no layout shift.
+- **Open Graph + semantic HTML5** structure for correct social sharing previews and crawler-friendly content hierarchy.
+- **GDPR-compliant** privacy policy subpage required for professional services operating in the EU.
+- **CI/CD** — automated deployment to GitHub Pages via `.github/workflows/static.yml`.
+
+## Features
+
+| Feature | Implementation |
+|---|---|
+| Responsive layout | CSS Grid + Flexbox, mobile-first breakpoints |
+| Portfolio gallery | Custom drag-to-scroll (Pointer Events API) |
+| Testimonials slider | Vanilla JS with auto-pagination |
+| Scroll animations | Intersection Observer API |
+| Contact form | Client-side validation, no backend required |
+| SEO | Semantic H1–H4 hierarchy, ALT attributes, Open Graph |
+| Legal compliance | Dedicated GDPR/Privacy Policy page |
+
+## Project Structure
+
+```
+ArboSerwisBeskidy/
+├── index.html          # Landing page (semantic HTML5, SEO structured)
+├── style.css           # Styles (CSS custom properties, modern layouts)
+├── script.js           # Gallery, slider, animations, form validation
+├── dokumenty.html      # GDPR / Privacy Policy
+├── img/                # WebP images + video assets
+└── .github/workflows/  # GitHub Actions deployment pipeline
+```
+
+## What I Learned
+
+Building this without any framework forced deliberate decisions at every step — choosing the right browser API instead of reaching for a library, structuring CSS for maintainability without a preprocessor, and thinking carefully about how the page would be indexed and rendered. It also gave me a much deeper understanding of Core Web Vitals and how layout, image formats, and JavaScript execution timing affect real-world performance scores.
+
+---
+
+**Authors:** [DolilDev](https://github.com/DolilDev) · [screampy525](https://github.com/screampy525)
