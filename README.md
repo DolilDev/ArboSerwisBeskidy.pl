@@ -2,7 +2,7 @@
 
 > A high-performance, SEO-optimized landing page built for a local arborist company in the Beskidy region of Poland. Designed to maximize lead generation through conversion-focused layout, fast load times, and strong local SEO signals.
 
-**[Live Demo →](https://ArboSerwisBeskidy.pl)**
+**[Live Demo →](https://arboserwisbeskidy.pl/)**
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
@@ -58,4 +58,4 @@ Building this without any framework forced deliberate decisions at every step �
 
 ---
 
-**Authors:** [DolilDev](https://github.com/DolilDev) · [screampy525](https://github.com/screampy525)
+**Live site:** [arboserwisbeskidy.pl](https://arboserwisbeskidy.pl/) · **Authors:** [DolilDev](https://github.com/DolilDev) · [screampy525](https://github.com/screampy525)
