@@ -52,10 +52,6 @@ ArboSerwisBeskidy/
 └── .github/workflows/  # GitHub Actions deployment pipeline
 ```
 
-## What I Learned
-
-Building this without any framework forced deliberate decisions at every step — choosing the right browser API instead of reaching for a library, structuring CSS for maintainability without a preprocessor, and thinking carefully about how the page would be indexed and rendered. It also gave me a much deeper understanding of Core Web Vitals and how layout, image formats, and JavaScript execution timing affect real-world performance scores.
-
 ---
 
 **Live site:** [arboserwisbeskidy.pl](https://arboserwisbeskidy.pl/) · **Authors:** [DolilDev](https://github.com/DolilDev) · [screampy525](https://github.com/screampy525)
